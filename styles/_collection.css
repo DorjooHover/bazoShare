@@ -1,0 +1,125 @@
+#collection {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 0;
+    align-items: center;
+}
+.collection_left {
+    width: 41vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.7vw;
+    padding:2vw 0;
+    margin-left: 6vw;
+    margin-right: 3.4vw;
+    
+}
+.collection_area {
+    box-shadow: 1px 0px 20px 0px #999;
+    width: 20vw;
+    height: 20vw;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+}
+.collection_area h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'roboto';
+    padding: 2.2rem;
+    letter-spacing: 0.06rem;
+    font-weight: bold;
+}
+.collection_area:hover {
+    opacity: 0.7;
+}
+.collection_area:hover h4 {
+    opacity: 1;
+
+}
+.collection_area h4 {
+    font-weight: 700;
+    margin-top: 4vw;
+    font-size: 8rem;
+    transition: 0.5s all ease-in-out;
+    padding: 1.3rem;
+    box-sizing: border-box;
+    line-height: 1.7;
+    opacity: 0;
+    color: #d8d5d5;
+}
+
+.collection_area_gym {
+    background-image: url(../img/collection/gym_sneakers.webp);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.collection_area_hiking {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/collection/hiking_boots.webp);
+}
+.collection_area_work {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/collection/work_boots.webp);
+}
+.collection_area_chukkas{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/collection/chukkas.webp);
+}
+
+.swiper_collection_right {
+    width: 44vw;
+    margin-right: 6vw;
+    overflow: hidden;
+}
+.swiper_collection_right .swiper-slide {
+    height: 42vw;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.collection_right_area {
+    padding-bottom: 7rem;
+    padding-left: 3rem;
+    color: #000;
+}
+.collection_right_area h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+.collection_right_area h2 {
+    font-size: 2rem;
+}
+.stractch_collection_right {
+    width: 4rem;
+    height: 8px;
+    background:#000;
+    margin:3rem 0;
+}
+.collection_cosmos {
+    color: #fff;
+}
+.collection_cosmos .stractch_collection_right {
+    background: #fff;
+}
+.signs {
+    background-image: url(../img/collection/swiper_collection/signs.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+
+}
+.cosmos {
+    background-image: url(../img/collection/swiper_collection/cosmos_store.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sneek {
+    background-image: url(../img/collection/swiper_collection/sneek_peek.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

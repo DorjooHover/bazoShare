@@ -1,0 +1,47 @@
+#logos {
+    margin: 10vh 0;
+}
+
+.swiper_logo {
+    overflow: hidden;
+    margin: 0 6vw
+}
+.swiper_logo .swiper-wrapper {
+};
+    
+.swiper_logo .swiper-slide {
+    
+}
+.swiper_logo .swiper-slide img {
+    cursor: pointer;
+    width: 80%;
+}
+.swiper_logo .swiper-slide img:hover {
+    opacity: 0.7;
+    transform: scale(0.8);
+    transition: all 0.4s ease-in-out;
+}
+.swiper_logo .swiper-button-next:hover, .swiper_logo .swiper-button-prev:hover {
+    opacity: 1;
+}
+.swiper_logo .swiper-button-next, .swiper_logo .swiper-button-prev {
+    position: absolute;
+    bottom: auto;
+    cursor: pointer;
+    top: unset;
+    opacity: 0.5;
+    color: #000;
+    margin-top: 5vw;
+}
+.swiper_logo .swiper-button-next {
+    left: unset;
+    right: 6vw;
+}
+.swiper_logo .swiper-button-prev {
+    right: unset;
+    left: 6vw;
+}
+.swiper-slide{
+    text-align: center;
+    align-items: center;
+}

@@ -1,0 +1,138 @@
+#header .swiper-slide:nth-child(1) {
+    background-image: url(../img/header/puuz_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+}
+#header .swiper-slide:nth-child(2) {
+    background-image: url(../img/header/gutal_bg.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.swiper_header {
+    overflow: hidden;
+}
+
+.swiper_header .swiper-pagination-bullet-active {
+    background-color: #fff;
+    color: #fff;
+}
+#header .swiper-slide:nth-child(3) {
+    background-image: url(../img/header/timberland_bg.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#header .shoes {
+    width: 900px;
+    height: auto;
+    transform: rotate(15deg);
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 50%;
+}
+.shoes_gutal {
+    width: 900px;
+    position: absolute;
+    left: 45%;
+    top: 5%;
+    transform: scaleX(-1)
+}
+#header .shoes_logo {
+    width: 236px;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+#header .swiper-slide h1 {
+    font-size: 16rem;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    text-align: center;
+    transform: translateY( -50%);
+    opacity: 0.3;
+    width: 100vw;
+}
+.shoes_timberland {
+    width: 30vw;
+    position: absolute;
+    top: 30%;
+    transform: rotate(-5deg);
+    left: 40%;
+
+    /* transform: translate((-50)); */
+}
+.timberland_text_bg {
+    font-size: 20rem !important;
+    text-align: left !important;
+    font-weight: 300 !important;
+    padding-left: 5vw;
+}
+.header_large_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 7rem;
+    width: 40vw;
+    font-weight: bold;
+    position: absolute;
+    left: 18%;
+    top: 46%;
+    z-index: 3; 
+    text-shadow: 3px 3px #000;
+
+}
+.header_large_text h2:nth-child(1) {
+    text-align: start;
+    padding-bottom: 10rem;
+}
+.header_large_text h2:nth-child(2) {
+    text-align: end;
+}
+
+.header_small_text {
+    position: absolute;
+    right: 20%;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    top: 15%;
+    text-align: right;
+    text-transform: uppercase;
+}
+.header_small_text h2 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 5rem;
+}
+.header_small_text a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+.gutal ul li {
+    color:#000
+}
+.gutal ul li:hover {
+    color: #fff;
+    transition: 0.4s all ease-in-out;
+}
+.timberland_logo {
+    width: 500px;
+    position: absolute;
+    bottom: 5%;
+    right: 4%;
+}
+
+.swiper-pagination {
+    color: #fff;
+    
+}
