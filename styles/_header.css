@@ -17,13 +17,13 @@
 }
 .swiper_slide_text {
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translate(-60%, -100%);
     text-align: left;
     left: 30%;
 }
 .timberland .swiper_slide_text  {
-    top: 60%;
+    top: 70%;
 }
 .swiper_slide_text h4 {
     font-weight: bold;
