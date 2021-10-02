@@ -10,6 +10,8 @@ const swiper_header = new Swiper('.swiper_header', {
     autoplay: {
         delay: 8000,
     },
+    paginationClickable: true,
+    
   });
   const swiper_collection_right = new Swiper('.swiper_collection_right', {
     direction:'horizontal',
@@ -44,10 +46,9 @@ const swiper_header = new Swiper('.swiper_header', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+      height:10,
     },
-    autoplay: {
-      delay:4000,
-    },
+
   })
   const swiper_logo = new Swiper('.swiper_logo', {
     direction: 'horizontal',

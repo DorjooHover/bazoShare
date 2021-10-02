@@ -1,0 +1,65 @@
+#contact {
+    display:flex;
+    justify-content: space-between;
+    background: var(--background-color);
+    padding: 5vw;
+}
+.contact {
+    color: #ddd;
+}
+.contact h1 {
+    text-transform: none;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.contact h1 span {
+    color: var(--font-color);
+}
+.phone {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.phone img {
+    width: 48px;
+    margin-right: 10px;
+}
+.phone a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.contact p {
+    margin-top: 1rem;
+}
+.fab {
+    color: #fff;
+    border-radius: 100%;
+    padding: 0.6rem;
+    margin: 0 0.5rem;
+}
+.contact_social {
+    margin-top: 2rem;
+}
+.fa-facebook {
+    background: #3c5b9b;
+}
+.fa-instagram {
+    background: #d83862;
+}
+.fa-facebook-messenger {
+    background: #a435fe;
+}
+.contact_social a:hover .fab{
+    background: #333;
+    transition: 0.3s all ease-in-out;
+}
+.mail {
+    color: #fff;
+}
+.contact_left .img {
+    height: 50px;
+    margin-bottom: 2rem;
+    width: auto;
+}

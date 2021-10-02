@@ -11,54 +11,14 @@ onscroll = function () {
     hamburger.classList.remove('hamburger')
     var scroller = document.documentElement.scrollTop
     var width = document.documentElement.scrollWidth
-    function nav_bg_on() {
-        navbar.classList.add('nav_bg')
-        navbar_text.style.color = 'black'
-        Object.entries(navbar_btns).forEach(entry => {
-            const [key, value] = entry;
-            value.style.color = '#000';
-          });
-        Object.entries(hamburgers).forEach(entry => {
-            const [key, value] = entry;
-            value.style.backgroundColor = '#000'
-        })
+    if(scroller > 0) {
+      navbar.classList.add('nav_bg')
+      navbar.classList.add('animate__fadeInDown')
+    } else {
+      navbar.classList.remove('nav_bg')
+      navbar.classList.remove('animate__fadeInDown')
     }
-    function nav_bg_off() {
-        navbar.classList.remove('nav_bg')
-        navbar_text.style.color = '#fff'
-        Object.entries(hamburgers).forEach(entry => {
-            const [key, value] = entry;
-            value.style.backgroundColor = '#fff'
-        })
-        Object.entries(navbar_btns).forEach(entry => {
-            const [key, value] = entry;
-            value.style.color = '#fff'
-          });
-    }
-    if(width > 1024) {
-        if(scroller > 924) {
-            nav_bg_on()
-        } else {
-            nav_bg_off()
-        }
-    } else if(width >= 768) {
-        if(scroller > 924) {
-            nav_bg_on()
-        }
-        else {
-            nav_bg_off()
-        }
-    } else if(width < 768){
-        if(scroller > 600) {
-            nav_bg_on()
-        }
-        else {
-            nav_bg_off()
-        }
-    }
-
-    
-}
+  }
 var hamburger = document.getElementById('hamburger')
 var hamburger_btns = document.getElementById("nav_btns_hamburger")
 
@@ -90,3 +50,62 @@ function navbar1(x) {
     x.classList.toggle('hamburger')
   }
   
+
+
+var new_arrival = document.getElementById('new_arrival')
+var bestseller = document.getElementById('bestseller')
+var featured_products = document.getElementById('featured_products')
+var __new = document.getElementById('new')
+var  trend = document.getElementById('trend')
+var feature = document.getElementById('feature')
+
+function new_arrivals() {
+  new_arrival.style.display = 'flex'
+  bestseller.style.display = 'none'
+  featured_products.style.display = 'none'
+  __new.classList.add('title_color')
+  trend.classList.remove('title_color')
+  feature.classList.remove('title_color')
+}
+function bestsellers() {
+  new_arrival.style.display = 'none'
+  bestseller.style.display = 'flex'
+  featured_products.style.display = 'none'
+  __new.classList.remove('title_color')
+  trend.classList.add('title_color')
+  feature.classList.remove('title_color')
+}
+function featured_product() {
+  featured_products.style.display = 'flex'
+  new_arrival.style.display = 'none'
+  bestseller.style.display = 'none'
+  __new.classList.remove('title_color')
+  trend.classList.remove('title_color')
+  feature.classList.add('title_color')
+}
+var next = document.getElementsByClassName('swiper-button-next')
+var prev = document.getElementsByClassName('swiper-button-prev')
+function mouse_hover() {
+  next[0].style.display = 'block'
+  prev[0].style.display = 'block'
+}
+function mouse_unhover() {
+  next[0].style.display = 'none'
+  prev[0].style.display = 'none'
+}
+function mouse_hover1() {
+  next[1].style.display = 'block'
+  prev[1].style.display = 'block'
+}
+function mouse_unhover1() {
+  next[1].style.display = 'none'
+  prev[1].style.display = 'none'
+}
+function mouse_hover2() {
+  next[2].style.display = 'block'
+  prev[2].style.display = 'block'
+}
+function mouse_unhover2() {
+  next[2].style.display = 'none'
+  prev[2].style.display = 'none'
+}

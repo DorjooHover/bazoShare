@@ -1,138 +1,89 @@
 #header .swiper-slide:nth-child(1) {
-    background-image: url(../img/header/puuz_bg.jpg);
+    background-image: url(../img/header/puuz_bg.webp);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 100vh;
-    width: 100vw;
+    background-size:auto 100% ;
 }
 #header .swiper-slide:nth-child(2) {
-    background-image: url(../img/header/gutal_bg.jpg);
-    height: 100vh;
-    width: 100vw;
-    background-size: 100% 100%;
+    background-image: url(../img/header/gutal_bg.webp);
+    background-size:auto 100% ;
     background-repeat: no-repeat;
 }
 .swiper_header {
     overflow: hidden;
 }
-
-.swiper_header .swiper-pagination-bullet-active {
-    background-color: #fff;
-    color: #fff;
+#header .swiper-slide {
+    height: 80vh;
+    width: auto;
+}
+.swiper_slide_text {
+    position: absolute;
+    top: 50%;
+    transform: translate(-60%, -100%);
+    text-align: left;
+    left: 30%;
+}
+.timberland .swiper_slide_text  {
+    top: 60%;
+}
+.swiper_slide_text h4 {
+    font-weight: bold;
+}
+.swiper_slide_text p {
+    margin-top: 3rem;
+    font-size: 1.5rem;
 }
 #header .swiper-slide:nth-child(3) {
-    background-image: url(../img/header/timberland_bg.jpg);
-    height: 100vh;
-    width: 100vw;
-    background-size: 100% 100%;
+    background-image: url(../img/header/timberland_bg.webp);
     background-repeat: no-repeat;
+    background-size:auto 100% ;
 }
-#header .shoes {
-    width: 900px;
-    height: auto;
-    transform: rotate(15deg);
-    position: absolute;
-    z-index: 2;
-    top: 40%;
-    left: 50%;
-}
-.shoes_gutal {
-    width: 900px;
-    position: absolute;
-    left: 45%;
-    top: 5%;
-    transform: scaleX(-1)
-}
-#header .shoes_logo {
-    width: 236px;
-    position: absolute;
-    top: 80%;
-    left: 10%;
-}
+
 #header .swiper-slide h1 {
-    font-size: 16rem;
+    font-size: 90px;
+    color: var(--background-color);
+    text-align: left;
+}
+#header .swiper-slide h1 span {
     font-weight: bold;
-    color: #fff;
-    position: absolute;
-    top: 60%;
-    text-align: center;
-    transform: translateY( -50%);
-    opacity: 0.3;
-    width: 100vw;
 }
-.shoes_timberland {
-    width: 30vw;
-    position: absolute;
-    top: 30%;
-    transform: rotate(-5deg);
-    left: 40%;
 
-    /* transform: translate((-50)); */
+
+
+.swiper_header .swiper-pagination-bullet-active {
+    background: var(--font-color);
+    transform: scale(1.2);
 }
-.timberland_text_bg {
-    font-size: 20rem !important;
-    text-align: left !important;
-    font-weight: 300 !important;
-    padding-left: 5vw;
+.swiper_header .swiper-pagination {
+    bottom: 22% !important;
 }
-.header_large_text {
+
+.header_bottom {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: #fff;
-    font-size: 7rem;
-    width: 40vw;
-    font-weight: bold;
-    position: absolute;
-    left: 18%;
-    top: 46%;
-    z-index: 3; 
-    text-shadow: 3px 3px #000;
-
+    margin: 2rem ;
+    border: solid 2px #e4e4e4;
+    border-radius: 5px;
+    justify-content: space-around;
+    padding: 2rem ;
 }
-.header_large_text h2:nth-child(1) {
-    text-align: start;
-    padding-bottom: 10rem;
+._text {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-right: 1px solid #e4e4e4;
+    width: 25%;
 }
-.header_large_text h2:nth-child(2) {
-    text-align: end;
+._text:nth-child(5) {
+    border-right: none;
 }
-
-.header_small_text {
-    position: absolute;
-    right: 20%;
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: 600;
-    top: 15%;
-    text-align: right;
-    text-transform: uppercase;
+._text img {
+    width: 46px;
+    height: 46px;
+    margin-right: 10px;
 }
-.header_small_text h2 {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    font-size: 5rem;
+._text h1 {
+    font-family: 'rubik',sans-serif;
 }
-.header_small_text a {
-    color: #fff;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-}
-.gutal ul li {
-    color:#000
-}
-.gutal ul li:hover {
-    color: #fff;
-    transition: 0.4s all ease-in-out;
-}
-.timberland_logo {
-    width: 500px;
-    position: absolute;
-    bottom: 5%;
-    right: 4%;
-}
-
-.swiper-pagination {
-    color: #fff;
-    
+._text p {
+    font-size: 14px;
+    margin-top: 5px;
 }

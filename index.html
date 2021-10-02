@@ -13,31 +13,31 @@
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/_header.css">
   <link rel="stylesheet" href="./styles/media.css">
+  <link rel="stylesheet" href="./styles/_contact.css">
   <link
   rel="stylesheet"
   href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 />
-<head>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
   <script
       src="https://kit.fontawesome.com/7c0fe31e57.js"
       crossorigin="anonymous"
     ></script>
 </head>
 <body>
-  <nav id="nav" >
-    <a href="#header"><h1 class="nav_logo">Bazo shoe store</h1></a>
+  <nav id="nav" class='animate__animated '>
+    <h1>bazo shoe shop</h1>
     <ul id='nav_btns'>
-      <a href="#header" class="li"><li>home</li></a>
-      <a href="#collection" class="li"><li>store</li></a>
-      <a href="#new_product" class="li"><li>features</li></a>
-      <a href="#logos" class="li"><li>category</li></a>
-      <a href="#" class="li"><li>pages</li></a>
-      <a href="#" class="li"><li>blog</li></a>
+      <a href="#header" class="li active"><li>Онцлох</li></a>
+      <a href="#collection" class="li"><li>ангилал</li></a>
+      <a href="#sale" class="li"><li>бүтээгдэхүүн</li></a>
+      <a href="#contact" class="li"><li>холбоо</li></a>
     </ul>
     <div id="hamburger" onclick="navbar1(this)">
       <div></div>
@@ -47,92 +47,91 @@
   </nav>
   <div id="nav_btns_hamburger">
     <ul class="animate__animated animate__fadeInDown">
-      <a href="#header" class="li"><li>home</li></a>
-      <a href="#collection" class="li"><li>store</li></a>
-      <a href="#new_product" class="li"><li>features</li></a>
-      <a href="#logos" class="li"><li>category</li></a>
-      <a href="#" class="li"><li>pages</li></a>
-      <a href="#" class="li"><li>blog</li></a>
+      <a href="#header" class="li"><li>Онцлох</li></a>
+      <a href="#collection" class="li"><li>ангилал</li></a>
+      <a href="#sale" class="li"><li>бүтээгдэхүүн</li></a>
+      <a href="#contact" class="li"><li>холбоо</li></a>
     </ul>
   </div>
   
   <section id="header">
     <div class="swiper_header">
       <div class="swiper-wrapper">
-        <div class="swiper-slide animate__animated animate__zoomIn">
-          <ul class="nav_social">
-            <a href=""><li><i class="fab fa-facebook"></i></li></a>
-            <a href=""><li><i class="fab fa-twitter"></i></li></a>
-            <a href=""><li><i class="fab fa-instagram"></i></li></a>
-          </ul>
-          <h1>Bazo shoe store</h1>
-          <div class="header_large_text">
-            <h2>Хавар намрын</h2>
-            <h2>шинэ колекц</h2>
+        <div class="swiper-slide puuz">
+          <div class="swiper_slide_text">
+            <h4 class="animate__animated animate__fadeInDown">1 + 1 үнэгүй</h4>
+            <h1 class="animate__animated animate__fadeInDown"><span>bazo</span> shoe</h1>
+            <p class="animate__animated animate__fadeInDown">Налгар Намрын Хямдралтай Бэлэгтэй Худалдаа</p>
           </div>
-          <img src="./img/header/puuz.png" alt="" class="shoes">
-          <div class="header_small_text">
-            <p>get it for</p>
-            <h2>$59</h2>
-            <a href="#">buy it here</a>
-          </div>
-          <img src="./img/header/puuz_logo.png" alt="" class="shoes_logo">
         </div>
         <div class="swiper-slide gutal">
-          <ul class="nav_social">
-            <a href=""><li><i class="fab fa-facebook"></i></li></a>
-            <a href=""><li><i class="fab fa-twitter"></i></li></a>
-            <a href=""><li><i class="fab fa-instagram"></i></li></a>
-          </ul>
-          <h1>Bazo shoe store </h1>
-          <div class="header_large_text">
-            <h2>Хавар намрын</h2>
-            <h2>шинэ колекц</h2>
+          <div class="swiper_slide_text">
+            <h4 class="animate__animated animate__fadeInDown">40-70% Хямдралтай</h4>
+            <h1 class="animate__animated animate__fadeInDown"><span>бүх</span> пүүз</h1>
+            <p class="animate__animated animate__fadeInDown">Тоо Хязгаартай Тул Яараарай</p>
           </div>
-          <img src="./img/header/gutal.png" alt="" class='shoes_gutal'>
-          <div class="header_small_text">
-            <p>get it for</p>
-            <h2>$59</h2>
-            <a href="#">buy it here</a>
-          </div>
-          <img src="./img/header/puuz_logo.png "  alt="" class='shoes_logo'>
         </div>
         <div class="swiper-slide timberland">
-          <h1 class="timberland_text_bg">Bazo shoe shop </h1>
-          <!-- <img src="./img/header/timberland_bg.jpg" alt=""> -->
-          <!-- <div class="header_large_text">
-            <h2>Хавар намрын</h2>
-            <h2>шинэ колекц</h2>
-          </div> -->
-          <img src="./img/header/timberland.png" alt="" class='shoes_timberland'>
-          <!-- <div class="header_small_text_timberland">
-            <p>get it for</p>
-            <h2>$59</h2>
-            <a href="#">shop now</a>
-          </div> -->
-          <img src="./img/header/Timberland-logo.png" alt="" class="timberland_logo">
+          <div class="swiper_slide_text">
+            <h1 class="animate__animated animate__fadeInDown"><span>шинэ загвар</span></h1>
+            <h1 class="animate__animated animate__fadeInDown"> ирсээр</h1>
+            <p class="animate__animated animate__fadeInDown">Nike | Converse | Adidas | Vans | Timberland | Dr Martens</p>
+          </div>
+         
         </div>
       </div>
       <div class="swiper-pagination"></div>
+    </div>
+    <div class="header_bottom">
+      <div class="_text">
+        <img src="./img/header/icon1.webp" alt="">
+        <div class="bottom_text">
+          <h1>Хүргэлт үнэгүй</h1>
+        </div>
+      </div>
+      <div class="_text">
+        <img src="./img/header/icon2.webp" alt="">
+        <div class="bottom_text">
+          <h1>Үргэлж нээлттэй</h1>
+        </div>
+      </div>
+      <div class="_text">
+        <img src="./img/header/icon3.webp" alt="">
+        <div class="bottom_text">
+          <h1>буцаах боломжтой</h1>
+        </div>
+      </div>
+      <div class="_text">
+        <img src="./img/header/icon4.webp" alt="">
+        <div class="bottom_text">
+          <h1>гишүүнчлэл</h1>
+        </div>
+      </div>
+      <div class="_text">
+        <img src="./img/header/icon5.webp" alt="">
+        <div class="bottom_text">
+          <h1>бүх картаар үйлчилнэ</h1>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="collection">
     <div class="collection_left">
       <div class="collection_area collection_area_gym animate__animated">
-        <h1>Gym sneakers</h1>
+        <h1>Бэлтгэлийн пүүз</h1>
         <h4>16</h4>
       </div>
       <div class="collection_area collection_area_hiking animate__animated">
-        <h1>hiking boots</h1>
+        <h1>Уулын гутал</h1>
         <h4>22</h4>
       </div>
       <div class="collection_area collection_area_work animate__animated">
-        <h1>work boots</h1>
+        <h1>ажлын гутал</h1>
         <h4>33</h4>
       </div>
       <div class="collection_area collection_area_chukkas animate__animated">
-        <h1>chukkas</h1>
+        <h1>Ботинк</h1>
         <h4>44</h4>
       </div>
     </div>
@@ -142,40 +141,167 @@
           <div class="collection_right_area">
             <h1>signs</h1>
           <div class="stractch_collection_right"></div>
-          <h2>make this season</h2>
-          <h2>yours</h2>
+          <h2>Энэ улирал</h2>
+          <h2>зөвхөн чинийх</h2>
           </div>
         </div>
         <div class="swiper-slide cosmos">
           <div class="collection_right_area collection_cosmos">
             <h1>cosmos store</h1>
           <div class="stractch_collection_right"></div>
-          <h2>summer offer</h2>
+          <h2>дөрвөн улирал өмсдөг</h2>
+          <h2>усны хамгаалалттай</h2>
           </div>
         </div>
         <div class="swiper-slide sneek">
           <div class="collection_right_area">
             <h1>sneek peek</h1>
           <div class="stractch_collection_right"></div>
-          <h2>sports edition*</h2>
-          <h2>*discount available</h2>
+          <h2>цэвэр арьсан дотортой</h2>
+          <h2>цэвэр үхрийн шир</h2>
           </div>
         </div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
   </section>
+  <div class="sale" id = 'sale'>
+    <p>Өнөөдрийн хямдрал: 500,000₮-с худалдан авалтанд 50% OFF <strong>"BAZO-001"</strong> + хүргэлт үнэгүй</p>
+  </div>
   <section id="new_product">
+    <div class="title">
+      <div class="div"></div>
+      <div class="title_btns">
+        <h1 id='new' class='title_color' onclick="new_arrivals()">Шинээр ирсэн</h1>
+        <p> / </p>
+        <h1 id='trend' onclick="bestsellers()">Трэнд болж буй</h1>
+        <p> / </p>
+        <h1 id='feature' onclick="featured_product()"">Онцлох бүтээгдэхүүн</h1>
+      </div>
+      <div class="div"></div>
+    </div>
     
-    <div class="swiper_product">
-      <div class="title">
-        <div class="title_head">
-          <h1>new arrivals</h1>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <p>Just in now</p>
+    <div class="swiper_product animate__animated animate__fadeIn" id="new_arrival" onmouseover="mouse_hover()"  onmouseout="mouse_unhover()">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-wrapper" >
+        <div class="swiper-slide">
+          <img src="./img/new_product/bast.webp" alt="">
+          <div class="new_product_footer">
+            <h1>Timberland</h1>
+            <h2>₮300,000</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/new_product/climbing.webp" alt="">
+          <div class="new_product_footer">
+            <h1>Nike_vaporwaffle</h1>
+            <h2>₮200,000</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/new_product/court.webp" alt="">
+          <div class="new_product_footer">
+            <h1>MARTENS</h1>
+            <h2>₮478,000</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/new_product/derby.webp" alt="">
+          <div class="new_product_footer">
+            <h1>vans</h1>
+            <h2>₮756,000</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/new_product/diebetic.webp" alt="">
+          <div class="new_product_footer">
+            <h1>converse</h1>
+            <h2>₮364,000</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/new_product/dori.webp" alt="">
+          <div class="new_product_footer">
+            <h1>adidas</h1>
+            <h2>₮389,000</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/new_product/dress.webp" alt="">
+          <div class="new_product_footer">
+            <h1>nike</h1>
+            <h2>₮336,000</h2>
+          </div>
         </div>
       </div>
+    </div>
+
+    <div class="swiper_product animate__animated animate__fadeIn" id='bestseller' onmouseover="mouse_hover1()"  onmouseout="mouse_unhover1()">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/new_product/bast.webp" alt="">
+          <div class="new_product_footer">
+            <h1>bast shoe</h1>
+            <h2>$106.00</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/new_product/climbing.webp" alt="">
+          <div class="new_product_footer">
+            <h1>climbing shoe</h1>
+            <h2>$675.00</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/new_product/court.webp" alt="">
+          <div class="new_product_footer">
+            <h1>court shoe</h1>
+            <h2>$478.00</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/new_product/derby.webp" alt="">
+          <div class="new_product_footer">
+            <h1>derby shoe</h1>
+            <h2>$756.00</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/new_product/diebetic.webp" alt="">
+          <div class="new_product_footer">
+            <h1>diabetic shoe</h1>
+            <h2>$364.00</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/new_product/dori.webp" alt="">
+          <div class="new_product_footer">
+            <h1>dori shoe</h1>
+            <h2>$389.00</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/new_product/dress.webp" alt="">
+          <div class="new_product_footer">
+            <h1>dress shoe</h1>
+            <h2>$336.00</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/new_product/high-heeled.webp" alt="">
+          <div class="new_product_footer">
+            <h1>high-heeled footwear</h1>
+            <h2>$250.00</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper_product animate__animated animate__fadeIn" id='featured_products' onmouseover="mouse_hover2()"  onmouseout="mouse_unhover2()">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="./img/new_product/bast.webp" alt="">
@@ -242,17 +368,43 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./img/logos/deer_hub.png" alt=""></div>
-        <div class="swiper-slide"><img src="./img/logos/fly_long.png" alt=""></div>
-        <div class="swiper-slide"><img src="./img/logos/glomun.png" alt=""></div>
-        <div class="swiper-slide"><img src="./img/logos/gun.png" alt=""></div>
-        <div class="swiper-slide"><img src="./img/logos/honour.png" alt=""></div>
-        <div class="swiper-slide"><img src="./img/logos/langar.png" alt=""></div>
-        <div class="swiper-slide"><img src="./img/logos/plus.png" alt=""></div>
-        <div class="swiper-slide"><img src="./img/logos/protect.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/logos/adidas.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/logos/converse.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/logos/martens.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/logos/nike.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/logos/timberland.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/logos/vans.png" alt=""></div>
       </div>
       
     </div>
+  </section>
+  <section id="contact">
+    <div class="contact_right contact">
+      
+      <h1>Ba<span>zo.</span></h1>
+      <div class="phone"><img src="./img/contact/phone.webp" alt=""><a href="tel:+97699119066"> +(976) 9911 9066</a></div>
+      <p> Peace Mall 4 давхарт 404 тоот</p>
+      <p>Open: 8:00 AM - Close: 18:00 PM</p>
+      <div class="contact_social">
+        <a href="https://www.facebook.com/bazo.gutal"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.facebook.com/bazo.gutal"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/messages/t/375932132597112"><i class="fab fa-facebook-messenger"></i></a>
+      </div>
+
+    </div>
+    <div class="contact_left contact">
+
+      <img src="./img/logos/hover.png" alt="" class="img">
+      <div class="phone"><img src="./img/contact/phone.webp" alt=""><a href="tel:+97688992864"> +(976) 8899 2864</a></div>
+      <p>Вэбсайт: <a href="http://thehover.tech/" target="_blank" class='mail'>http://thehover.tech/</a></p>
+      <p>24/7 үйлчилгээ</p>
+      <div class="contact_social">
+        <a href="https://www.facebook.com/thehover.tech/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/hover.tech/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/messages/t/100217392396718"><i class="fab fa-facebook-messenger"></i></a>
+      </div>
+    </div>
+
   </section>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="./swiper.js"></script>

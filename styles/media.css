@@ -33,7 +33,30 @@
     .title_head .swiper-button-prev {
         right: 13vw;
     }
-
+    #nav_btns_hamburger {
+        top: 64px;
+    }
+    .header_bottom {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:1rem;
+    }
+    ._text{
+        width: auto;
+        border: none;
+    }
+    #hamburger {
+        width: 3rem;
+        height: 3rem;
+        margin-left: 1rem;
+    }
+    #hamburger div:nth-child(2) {
+        margin: 7px 0;
+    }
+    #hamburger div {
+        width: 2rem;
+        height: 3px;
+    }
 }
 
 @media screen and (max-width:1000px) {
@@ -88,7 +111,7 @@
         text-align: right;
     }
     #nav {
-        padding-bottom: 0;
+        padding: 0;
     }
     #nav #hamburger {
         margin-right: 0;
@@ -143,13 +166,77 @@
         width: 100% !important;
     }
     #nav_btns_hamburger {
-        top:96px
-
+        top:48px;
     }
-
+    .title {
+        margin-bottom: 2rem;
+    }
+    .title_btns {
+        flex-direction: column;
+    }
+    .title p {
+        display: none;
+    }
+    .title h1 {
+        padding: 0.5rem;
+        font-size: 16px; ;
+    }
+    .swiper_product .swiper-slide{
+        margin-top: 0;
+        padding-left: 0;
+    }
+    .swiper_product {
+        margin-left: 0;
+    }
+    .swiper_product .swiper-button-prev {
+        left:5vw;
+    }
+    .swiper_product .swiper-button-next {
+        right: 6vw;
+    }
+    #nav h1{
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+   
+    
+    
+    #header .swiper-slide h1 {
+        font-size: 34px;
+    }
+    .swiper_slide_text h4 {
+        font-size: 14px;
+    }
+    .swiper_slide_text p {
+        font-size: 12px;
+        margin-top: 1rem;
+    }
+    .swiper_slide_text {
+        margin-left: 2rem;
+    }
+    .header_bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    ._text {
+        width: auto;
+        border: none;
+        margin-bottom: 1.5rem;
+    }
+    ._text:nth-child(5) {
+        margin-bottom: 0;
+    }
+    #contact {
+        flex-direction: column;
+    }
+    #contact h1 {
+        font-size: 40px;
+    }
+    .contact_left {
+        margin-top: 2rem;
+    }
 }
 @media screen and (max-width: 400px) {
-    .swiper_product .swiper-slide {
-        margin-top: 12rem;
-    }
+
 }
