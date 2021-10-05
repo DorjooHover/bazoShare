@@ -184,56 +184,8 @@
     <div class="swiper_product animate__animated animate__fadeIn" id="new_arrival" onmouseover="mouse_hover()"  onmouseout="mouse_unhover()">
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-      <div class="swiper-wrapper" >
-        <div class="swiper-slide">
-          <img src="./img/new_product/bast.webp" alt="">
-          <div class="new_product_footer">
-            <h1>Timberland</h1>
-            <h2>₮300,000</h2>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/new_product/climbing.webp" alt="">
-          <div class="new_product_footer">
-            <h1>Nike_vaporwaffle</h1>
-            <h2>₮200,000</h2>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/new_product/court.webp" alt="">
-          <div class="new_product_footer">
-            <h1>MARTENS</h1>
-            <h2>₮478,000</h2>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/new_product/derby.webp" alt="">
-          <div class="new_product_footer">
-            <h1>vans</h1>
-            <h2>₮756,000</h2>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/new_product/diebetic.webp" alt="">
-          <div class="new_product_footer">
-            <h1>converse</h1>
-            <h2>₮364,000</h2>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/new_product/dori.webp" alt="">
-          <div class="new_product_footer">
-            <h1>adidas</h1>
-            <h2>₮389,000</h2>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/new_product/dress.webp" alt="">
-          <div class="new_product_footer">
-            <h1>nike</h1>
-            <h2>₮336,000</h2>
-          </div>
-        </div>
+      <div class="swiper-wrapper" id='container'>
+        
       </div>
     </div>
 
@@ -392,6 +344,13 @@
       </div>
 
     </div>
+    <div class="contact_center contact" onclick="showCardProducts()">
+      <div class="icon">
+        <div id="num">0</div>
+        <button><i class="fas fa-cart-arrow-down"></i></button>
+      </div>
+      <div id="contact_center"></div>
+    </div>
     <div class="contact_left contact">
 
       <img src="./img/logos/hover.png" alt="" class="img">
@@ -407,7 +366,9 @@
 
   </section>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./swiper.js"></script>
   <script src="./active.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>

@@ -113,9 +113,9 @@
 }
 .new_product_footer h2 {
     text-align: left;
-    margin-top: 1rem;
     font-size: 2rem;
     font-weight: bold;
+    display: block;
 }
 .sale strong{
     color: #eb3e32;
@@ -138,4 +138,28 @@
 }
 #featured_products {
     display: none;
+}
+.price {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price .fas {
+    font-size: 30px;
+}
+#num {
+    position: absolute;
+    transform: translate(43px,-10px);
+    padding: 5px 8px;
+    color: #000;
+    border-radius: 50%;
+    z-index: 2;
+    background: #0f0;
+}
+.icon i {
+    z-index: 1;
+    font-size: 42px;
+    background: none;
+    cursor: pointer;
 }
